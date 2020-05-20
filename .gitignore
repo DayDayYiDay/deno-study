@@ -4,3 +4,4 @@ dist/
 deno
 assets.go
 .vscode/
+src/
