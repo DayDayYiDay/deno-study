@@ -6,3 +6,5 @@ assets.go
 .vscode/
 src/
 bak/
+bin/
+pkg/
