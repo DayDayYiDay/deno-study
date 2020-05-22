@@ -8,3 +8,4 @@ src/
 bak/
 bin/
 pkg/
+msg.pb.go
