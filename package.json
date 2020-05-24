@@ -1,7 +1,9 @@
 {
   "name": "deno",
   "dependencies": {
-    "protobufjs": "^6.9.0"
+    "@types/text-encoding": "^0.0.35",
+    "protobufjs": "^6.9.0",
+    "text-encoding": "^0.7.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.8.1",
