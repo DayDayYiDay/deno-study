@@ -20,7 +20,6 @@ function readFileSync(filename: string): string {
 }
 
 function load(argv: string[]): void {
-  console.log("Load argv", argv);
   const inputFn = argv[1];
   const source = readFileSync(inputFn);
   console.log("source", source);
@@ -29,13 +28,11 @@ function load(argv: string[]): void {
 V8Worker2.recv((ab: ArrayBuffer) => {
   const msg = pb.Msg.decode(new Uint8Array(ab));
   switch (msg.kind) {
-      case pb.Msg.MsgKind.LOAD:
-        load(msg.argv);
-        break;
-      default:
-        console.log("Unknown message", msg);
-        break;
+    case pb.Msg.MsgKind.LOAD:
+      load(msg.argv);
+      break;
+    default:
+      console.log("Unknown message", msg);
+      break;
   }
 });
-
-V8Worker2.print("Hello");
