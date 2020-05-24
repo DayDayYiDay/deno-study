@@ -9,3 +9,5 @@ bak/
 bin/
 pkg/
 msg.pb.go
+msg.pb.js
+msg.pb.d.ts

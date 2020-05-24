@@ -1,8 +1,5 @@
 package main
 
-//go:generate protoc --go_out=. msg.proto
-//go:generate ./node_modules/.bin/parcel build --out-dir=dist/ --no-minify main.ts
-//go:generate go-bindata -pkg $GOPACKAGE -o assets.go dist/
 
 import (
 	"os"
