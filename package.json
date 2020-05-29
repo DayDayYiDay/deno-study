@@ -4,14 +4,12 @@
     "lint": "tslint -p tsconfig.json",
     "fmt": "prettier --write *.ts* *.js *.json"
   },
-  "dependencies": {
-    "@types/text-encoding": "^0.0.35",
-    "protobufjs": "^6.9.0",
-    "text-encoding": "^0.7.0"
-  },
   "devDependencies": {
+    "http-server": "^0.11.1",
     "parcel-bundler": "^1.8.1",
-    "tslint": "^6.1.2",
+    "protobufjs": "^6.8.6",
+    "tslint": "^5.10.0",
     "typescript": "^2.8.3"
-  }
+  },
+  "dependencies": {}
 }
